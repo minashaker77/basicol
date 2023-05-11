@@ -1,3 +1,11 @@
 // base:
-@import './sass/base/reset';
-@import './sass/base/typography'
+@import './base/reset';
+@import './base/typography';
+
+//components
+@import './components/container';
+@import './components/buttons';
+
+//layout:
+@import './layout/header';
+
