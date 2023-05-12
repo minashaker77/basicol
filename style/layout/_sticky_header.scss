@@ -1,0 +1,98 @@
+@import './header';
+@import './navigation';
+
+.sticky_header{
+    padding: 18px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-right: 15px;
+    margin-left: 15px;
+    border-bottom: 1px solid #4B4E50;
+    padding-bottom: 22px;
+    align-items: center;
+}
+.sticky_header .main_menu {
+    text-align: center;
+}
+.sticky_header .main_menu ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
+.sticky_header .main_menu ul li:first-child a{
+    padding-left: 0;
+} 
+.sticky_header .main_menu ul li a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.sticky_header .main_menu ul li .submenu{
+    position: absolute;
+    left: 0;
+    top: 160%;
+    background: #fff;
+    width: 200px;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    transition: 0.6s;
+}
+
+.sticky_header .main_menu ul li .submenu i{
+    display: block
+}
+
+.sticky_header .main_menu ul li a:hover{
+    color: #28AE60;
+}
+
+.sticky_header .main_menu ul li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    top: 150%;
+}
+
+.sticky_header .main_menu ul li .submenu li a{
+    padding: 10px 15px;
+    position: inherit;
+    transition: 0.3s;
+    display: block;
+    color: #000;
+}
+.Appointment{
+    display: flex;
+    align-items: center;
+}
+.Appointment .search_button {
+    margin-right: 15px;
+}
+.Appointment .book_btn {
+    margin-right: 0;
+}
+.Appointment .book_btn a {
+    background: #28AE60;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 4px;
+}
+.Appointment .search_button a i {
+    color: #E8E8E8;
+}
+
+.sticky_header .main_menu ul li a i{
+    font-size: 9px;
+}

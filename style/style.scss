@@ -8,6 +8,8 @@
 
 //layout:
 @import './layout/header';
+@import './layout/navigation';
+@import './layout/sticky_header';
 
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/icons';

@@ -1,14 +1,14 @@
+
 @keyframes slide {
-    0%,15%,100% {
-        transform: translateX(0);
-        animation-timing-function: ease;
+    50%{
+    // transform: scale(-3964px, 0px, 0px);
+    transition: all 750ms ease;
+    animation-timing-function: ease;
     }
-    20% {
-        transform: translateX(-100%);
-        animation-timing-function: step-end;
-    }
-    95% {
-        transform: translateX(100%);
+    100%{
+        transform: scale(-3964px, 0px, 0px);
+        transition: all 750ms ease;
         animation-timing-function: ease;
     }
 }
+

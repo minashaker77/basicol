@@ -2,30 +2,34 @@
 
 
 .slider_area {
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-
-}
-
-.slider_area .slide {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    animation: slide 10s infinite;
+    height: calc(100vh - 20%);
+    z-index: 1;
+    animation: slide 2s linear;
+}
+
+.slider_area .slide {
+    position: relative;
+    width: 100%;
+    height:  calc(100vh - 20%);
+    float: left;
+    overflow: hidden;
 }
 
 .slider_area .slide.slide1 {
-    background-image:url("../../img/banner.png.webp");
     animation-delay: 0;
+    background: url(../../img/banner.png.webp);
+    background-size: cover;
+    background-position: left;
 }
 
 .slider_area .slide.slide2 {
-    background-image: url("../../img/banner2.png.webp");
-    animation-delay: -2s;
+    // background-image: url("");
+    animation-delay: 2s;
+    background: url(../../img/banner2.png.webp);
+    background-size: cover;
+    background-position: right;
 }

@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="../js/slider_carousel.js"></script>
 </head>
 
 <body>
@@ -31,17 +32,90 @@
                 </ul>
             </div>
         </div>
-        <div class="sticky-header">
+        <div class="sticky_header">
             <div class="logo">
                 <a href="index.html">
-                <img src="./img/logo.png.webp" alt="">
+                    <img src="./img/logo.png.webp" alt="">
                 </a>
+            </div>
+            <div class="main_menu">
+                <nav>
+                    <ul id="navigation">
+                        <li><a class="active" href="index.html">home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="#">blog <i class="fa fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="single-blog.html">single-blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="elements.html">elements</a></li>
+                                <li><a href="Portfolio.html">Portfolio</a></li>
+                                <li><a href="portfolio_details.html">Portfolio details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Appointment">
+                <div class="search_button">
+                    <a href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
+                <div class="book_btn d-none d-lg-block">
+                    <a class="popup-with-form" href="#test-form">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/logo.png.webp" alt="">
+                </a>
+            </div>
+            <div class="slicknav_menu">
+                <a href="#" aria-haspopup="true" role="button" tabindex="0"
+                class="slicknav_btn slicknav_collapsed" style="outline: none;"><span
+                    class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span
+                        class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span
+                        class="slicknav_icon-bar"></span></span></a>
+            <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                <li><a class="active" href="index.html" role="menuitem" tabindex="-1">home</a></li>
+                <li><a href="about.html" role="menuitem" tabindex="-1">About</a></li>
+                <li><a href="service.html" role="menuitem" tabindex="-1">Services</a></li>
+                <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true"
+                        tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="#"
+                            tabindex="-1">blog <i class="ti-angle-down"></i></a>
+                        <span class="slicknav_arrow">+</span></a>
+                    <ul class="submenu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                        <li><a href="blog.html" role="menuitem" tabindex="-1">blog</a></li>
+                        <li><a href="single-blog.html" role="menuitem" tabindex="-1">single-blog</a></li>
+                    </ul>
+                </li>
+                <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true"
+                        tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="#"
+                            tabindex="-1">pages <i class="ti-angle-down"></i></a>
+                        <span class="slicknav_arrow">+</span></a>
+                    <ul class="submenu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                        <li><a href="elements.html" role="menuitem" tabindex="-1">elements</a></li>
+                        <li><a href="Portfolio.html" role="menuitem" tabindex="-1">Portfolio</a></li>
+                        <li><a href="portfolio_details.html" role="menuitem" tabindex="-1">Portfolio details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" role="menuitem" tabindex="-1">Contact</a></li>
+            </ul>
+        </div>
         </div>
     </div>
     <div class="slider_area">
         <div class="slide slide1"></div>
-        <div class="slide slide2"></div>
+        <!-- <div class="slide slide2"></div> -->
     </div>
     <div class="service_center">
         <div class="section_title"></div>
