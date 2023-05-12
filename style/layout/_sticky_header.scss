@@ -1,18 +1,30 @@
-@import './header';
-@import './navigation';
 
 .sticky_header{
     padding: 18px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
     margin-right: 15px;
     margin-left: 15px;
     border-bottom: 1px solid #4B4E50;
     padding-bottom: 22px;
-    align-items: center;
+    text-align: center;
 }
+.sticky_header .main_menu,
+.sticky_header .Appointment,
+.sticky_header .logo{
+    display: inline-block;
+}
+.sticky_header .logo{
+    float: left;
+    margin-top: 8px;
+}
+.sticky_header .Appointment{
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
 .sticky_header .main_menu {
+    margin-top: 10px;
     text-align: center;
 }
 .sticky_header .main_menu ul li {
@@ -70,12 +82,10 @@
     display: block;
     color: #000;
 }
-.Appointment{
-    display: flex;
-    align-items: center;
-}
+
 .Appointment .search_button {
     margin-right: 15px;
+    margin-left: 0;
 }
 .Appointment .book_btn {
     margin-right: 0;

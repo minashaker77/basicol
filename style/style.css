@@ -348,172 +348,11 @@ a, button {
   height: 44px;
 }
 
-.sticky_header {
-  padding: 18px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 15px;
-  margin-left: 15px;
-  border-bottom: 1px solid #4B4E50;
-  padding-bottom: 22px;
-  align-items: center;
+a, button {
+  color: #1F1F1F;
+  outline: medium none;
 }
 
-.sticky_header .main_menu {
-  text-align: center;
-}
-
-.sticky_header .main_menu ul li {
-  display: inline-block;
-  position: relative;
-  margin: 0 10px;
-}
-
-.sticky_header .main_menu ul li:first-child a {
-  padding-left: 0;
-}
-
-.sticky_header .main_menu ul li a {
-  color: #fff;
-  font-size: 15px;
-  text-transform: capitalize;
-  font-weight: 400;
-  display: inline-block;
-  padding: 0px 0px 0px 0px;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  text-transform: capitalize;
-}
-
-.sticky_header .main_menu ul li .submenu {
-  position: absolute;
-  left: 0;
-  top: 160%;
-  background: #fff;
-  width: 200px;
-  z-index: 2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
-  opacity: 0;
-  visibility: hidden;
-  text-align: left;
-  transition: 0.6s;
-}
-
-.sticky_header .main_menu ul li .submenu i {
-  display: block;
-}
-
-.sticky_header .main_menu ul li a:hover {
-  color: #28AE60;
-}
-
-.sticky_header .main_menu ul li:hover > .submenu {
-  opacity: 1;
-  visibility: visible;
-  top: 150%;
-}
-
-.sticky_header .main_menu ul li .submenu li a {
-  padding: 10px 15px;
-  position: inherit;
-  transition: 0.3s;
-  display: block;
-  color: #000;
-}
-
-.Appointment {
-  display: flex;
-  align-items: center;
-}
-
-.Appointment .search_button {
-  margin-right: 15px;
-}
-
-.Appointment .book_btn {
-  margin-right: 0;
-}
-
-.Appointment .book_btn a {
-  background: #28AE60;
-  padding: 12px 26px;
-  font-size: 14px;
-  font-weight: 400;
-  border: 1px solid transparent;
-  color: #fff;
-  border-radius: 4px;
-}
-
-.Appointment .search_button a i {
-  color: #E8E8E8;
-}
-
-.sticky_header .main_menu ul li a i {
-  font-size: 9px;
-}
-
-.header_area {
-  left: 0;
-  right: 0;
-  width: 100%;
-  top: 0;
-  height: 30px;
-  z-index: 9;
-  position: absolute;
-}
-
-.header_area .header_top_area {
-  padding: 12px 0;
-  background: rgba(44, 44, 44, 0.5);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-template-rows: auto 1fr auto;
-  overflow: auto;
-  justify-items: stretch;
-}
-
-.header_area .header_top_area ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-template-rows: auto 1fr auto;
-  justify-items: center;
-}
-
-.header_area .header_top_area .social_media_links a {
-  font-size: 15px;
-  color: #fff;
-  margin-left: 12px;
-}
-
-.header_area .header_top_area .short_contact_list ul li a {
-  font-size: 13px;
-  color: #fff;
-  margin-left: 50px;
-}
-
-.header_area .header_top_area .short_contact_list ul li a i {
-  color: #28AE60;
-}
-
-@media screen and (max-width: 992px) {
-  .header_area .header_top_area,
-  .header_area .sticky_header {
-    display: none;
-  }
-  .header_area .slicknav_menu, .header_area .logo {
-    display: block;
-  }
-}
-@media screen and (min-width: 992px) {
-  .header_area .header_top_area,
-  .header_area .sticky_header {
-    display: block;
-  }
-  .header_area .logo, .header_area .slicknav_menu {
-    display: none;
-  }
-}
 .slicknav_btn, .slicknav_nav .slicknav_item {
   cursor: pointer;
 }
@@ -686,17 +525,33 @@ a, button {
 
 .sticky_header {
   padding: 18px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-right: 15px;
   margin-left: 15px;
   border-bottom: 1px solid #4B4E50;
   padding-bottom: 22px;
-  align-items: center;
+  text-align: center;
+}
+
+.sticky_header .main_menu,
+.sticky_header .Appointment,
+.sticky_header .logo {
+  display: inline-block;
+}
+
+.sticky_header .logo {
+  float: left;
+  margin-top: 8px;
+}
+
+.sticky_header .Appointment {
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
 .sticky_header .main_menu {
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -758,13 +613,214 @@ a, button {
   color: #000;
 }
 
-.Appointment {
+.Appointment .search_button {
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+.Appointment .book_btn {
+  margin-right: 0;
+}
+
+.Appointment .book_btn a {
+  background: #28AE60;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.Appointment .search_button a i {
+  color: #E8E8E8;
+}
+
+.sticky_header .main_menu ul li a i {
+  font-size: 9px;
+}
+
+.header_area {
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  height: 30px;
+  z-index: 9;
+  position: absolute;
+}
+
+.header_area .header_top_area {
+  padding: 12px 0;
+  background: rgba(44, 44, 44, 0.5);
+  width: 100%;
+  float: left;
+}
+
+.header_area .header_top_area .social_media_links,
+.header_area .header_top_area .short_contact_list {
+  display: inline-block;
+}
+
+.header_area .header_top_area .social_media_links {
+  float: left;
+}
+
+.header_area .header_top_area .short_contact_list {
+  float: right;
+}
+
+.header_area .header_top_area .short_contact_list {
+  text-align: right;
+}
+
+.header_area .header_top_area ul {
   display: flex;
-  align-items: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+.header_area .header_top_area .social_media_links a {
+  font-size: 15px;
+  color: #fff;
+  margin-left: 12px;
+}
+
+.header_area .header_top_area .short_contact_list ul li a {
+  font-size: 13px;
+  color: #fff;
+  margin-left: 50px;
+}
+
+.header_area .header_top_area .short_contact_list ul li a i {
+  color: #28AE60;
+}
+
+@media screen and (max-width: 992px) {
+  .header_area .header_top_area,
+  .header_area .sticky_header {
+    display: none;
+  }
+  .header_bottom_border {
+    border-bottom: 1px solid #4B4E50;
+    padding-bottom: 22px;
+  }
+  .header_area .mobile_menu .slicknav_menu,
+  .header_area .mobile_menu .logo,
+  .header_area .sticky_header .logo, .header_bottom_border {
+    display: block;
+    max-width: 720px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header_area .header_top_area,
+  .header_area .sticky_header,
+  .header_area .sticky_header .logo {
+    display: block;
+  }
+  .header_area .mobile_menu .logo,
+  .header_area .mobile_menu .slicknav_menu {
+    display: none;
+  }
+}
+.sticky_header {
+  padding: 18px 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-bottom: 1px solid #4B4E50;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.sticky_header .main_menu,
+.sticky_header .Appointment,
+.sticky_header .logo {
+  display: inline-block;
+}
+
+.sticky_header .logo {
+  float: left;
+  margin-top: 8px;
+}
+
+.sticky_header .Appointment {
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.sticky_header .main_menu {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sticky_header .main_menu ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+}
+
+.sticky_header .main_menu ul li:first-child a {
+  padding-left: 0;
+}
+
+.sticky_header .main_menu ul li a {
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.sticky_header .main_menu ul li .submenu {
+  position: absolute;
+  left: 0;
+  top: 160%;
+  background: #fff;
+  width: 200px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  transition: 0.6s;
+}
+
+.sticky_header .main_menu ul li .submenu i {
+  display: block;
+}
+
+.sticky_header .main_menu ul li a:hover {
+  color: #28AE60;
+}
+
+.sticky_header .main_menu ul li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 150%;
+}
+
+.sticky_header .main_menu ul li .submenu li a {
+  padding: 10px 15px;
+  position: inherit;
+  transition: 0.3s;
+  display: block;
+  color: #000;
 }
 
 .Appointment .search_button {
   margin-right: 15px;
+  margin-left: 0;
 }
 
 .Appointment .book_btn {

@@ -2,3 +2,7 @@ a,button {
     color: #1F1F1F;
     outline: medium none;
 }
+a:focus, a:hover {
+    text-decoration: none;
+    color: #1F1F1F;
+}
