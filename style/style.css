@@ -16259,4 +16259,46 @@ readers do not read off random characters that represent icons */
 
 .fa-level-up-alt::before {
   content: "\f3bf";
+}
+
+@keyframes slide {
+  0%, 15%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+.slider_area {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slider_area .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 10s infinite;
+}
+
+.slider_area .slide.slide1 {
+  background-image: url("../../img/banner.png.webp");
+  animation-delay: 0;
+}
+
+.slider_area .slide.slide2 {
+  background-image: url("../../img/banner2.png.webp");
+  animation-delay: -2s;
 }/*# sourceMappingURL=style.css.map */
