@@ -189,6 +189,10 @@ a, button {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:focus, a:hover {
   text-decoration: none;
   color: #1F1F1F;
@@ -242,7 +246,12 @@ a:focus, a:hover {
   transition: 0.5s;
   cursor: pointer;
   letter-spacing: 2px;
-  text-decoration: none;
+}
+
+.boxed-btn3-white:hover {
+  background: #28AE61;
+  color: #fff !important;
+  border: 1px solid transparent;
 }
 
 .boxed-btn3-white:focus {
@@ -257,6 +266,10 @@ a:focus, a:hover {
 
 .boxed-btn3-white i {
   margin-right: 2px;
+}
+
+.boxed-btn3-white a {
+  text-decoration: none;
 }
 
 .boxed-btn3-green-2 {
@@ -289,6 +302,10 @@ a, button {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:focus, a:hover {
   text-decoration: none;
   color: #1F1F1F;
@@ -342,7 +359,12 @@ a:focus, a:hover {
   transition: 0.5s;
   cursor: pointer;
   letter-spacing: 2px;
-  text-decoration: none;
+}
+
+.boxed-btn3-white:hover {
+  background: #28AE61;
+  color: #fff !important;
+  border: 1px solid transparent;
 }
 
 .boxed-btn3-white:focus {
@@ -357,6 +379,10 @@ a:focus, a:hover {
 
 .boxed-btn3-white i {
   margin-right: 2px;
+}
+
+.boxed-btn3-white a {
+  text-decoration: none;
 }
 
 .boxed-btn3-green-2 {
@@ -785,7 +811,7 @@ a:focus, a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.service_area .single_service:hover .hover_content {
+.service_area .single_service:hover .service_hover .hover_content {
   transform: translateY(0%);
   opacity: 1;
   visibility: visible;
@@ -993,6 +1019,164 @@ a:focus, a:hover {
   color: #fff;
   font-size: 14px;
   font-weight: 300;
+}
+
+.about_wrap_area {
+  padding: 145px 0 115px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.about_bg_1 {
+  background-image: url(../../img/about/about_bg.png.webp);
+}
+
+.about_wrap_area::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #2C2C2C;
+  opacity: 0.6;
+  content: "";
+  z-index: -1;
+}
+
+.about_wrap_area .single_service_wrap {
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 60px 63px;
+  transition: 0.5s;
+}
+
+.about_wrap_area .single_service_wrap:hover {
+  background: #28AE60;
+  border-color: #28AE60;
+}
+
+.about_wrap_area .single_service_wrap h3, .about_wrap_area .single_service_wrap .h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 38px;
+  margin-bottom: 20px;
+}
+
+.about_wrap_area .single_service_wrap p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #D5D5D5;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .about_wrap_area .single_service_wrap {
+    padding: 60px 20px;
+  }
+}
+.financial_solution_area {
+  padding: 150px 0;
+}
+
+.financial_solution_area .finance_thumb img {
+  width: 100%;
+}
+
+.financial_solution_area .financial_active {
+  padding-top: 70px;
+}
+
+.financial_solution_area .financial_active .single_finalcial_wrap {
+  margin-bottom: 90px;
+}
+
+.financial_solution_area .financial_active .single_finalcial_wrap h3, .financial_solution_area .financial_active .single_finalcial_wrap .h3 {
+  font-size: 36px;
+  line-height: 55px;
+  font-weight: 400;
+  color: #2C2C2C;
+  margin-bottom: 20px;
+}
+
+.financial_solution_area .financial_active .single_finalcial_wrap p {
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 0;
+}
+
+.financial_solution_area .owl-carousel:hover .owl-nav div:hover {
+  color: #fff;
+  background: #28AE61;
+  border: 1px solid transparent;
+}
+
+.financial_solution_area .owl-carousel:hover .owl-nav div {
+  opacity: 1;
+  visibility: visible;
+}
+
+.financial_solution_area .owl-carousel .owl-nav div {
+  background: transparent;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  left: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  border: 1px solid #D4EFDF;
+  left: 0px;
+  color: #28AE60;
+  bottom: 0;
+  top: auto;
+}
+
+.financial_solution_area .owl-carousel .owl-nav div.owl-prev i {
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+
+.financial_solution_area .owl-carousel .owl-nav div.owl-next {
+  left: 55px;
+  right: auto;
+}
+
+.financial_solution_area .owl-carousel .owl-nav div.owl-next i {
+  position: relative;
+  right: 0;
+  top: -1px;
+}
+
+.project_area {
+  background: #28AE60;
+  padding: 150px 0;
+}
+
+.project_area .project_info h3, .project_area .project_info .h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.project_area .project_info p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 26px;
+  margin-top: 8px;
+}
+
+.project_area .project_info .boxed-btn3-white:hover {
+  background: #fff;
+  color: #28AE60 !important;
 }
 
 /*!

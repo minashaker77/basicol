@@ -1,0 +1,66 @@
+.financial_solution_area {
+    padding: 150px 0;
+}
+.financial_solution_area .finance_thumb img {
+    width: 100%;
+}
+.financial_solution_area .financial_active {
+    padding-top: 70px;
+}
+.financial_solution_area .financial_active .single_finalcial_wrap {
+    margin-bottom: 90px;
+}
+.financial_solution_area .financial_active .single_finalcial_wrap h3 {
+    font-size: 36px;
+    line-height: 55px;
+    font-weight: 400;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+}
+.financial_solution_area .financial_active .single_finalcial_wrap p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 0;
+}
+.financial_solution_area .owl-carousel:hover .owl-nav div:hover {
+    color: #fff;
+    background: #28AE61;
+    border: 1px solid transparent;
+}
+.financial_solution_area .owl-carousel:hover .owl-nav div {
+    opacity: 1;
+    visibility: visible;
+}
+.financial_solution_area .owl-carousel .owl-nav div {
+    background: transparent;
+    height: 40px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    left: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    border: 1px solid #D4EFDF;
+    left: 0px;
+    color: #28AE60;
+    bottom: 0;
+    top: auto;
+}
+.financial_solution_area .owl-carousel .owl-nav div.owl-prev i {
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+.financial_solution_area .owl-carousel .owl-nav div.owl-next {
+    left: 55px;
+    right: auto;
+}
+.financial_solution_area .owl-carousel .owl-nav div.owl-next i {
+    position: relative;
+    right: 0;
+    top: -1px;
+}

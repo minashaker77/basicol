@@ -1,0 +1,51 @@
+.about_wrap_area {
+    padding: 145px 0 115px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.about_bg_1 {
+    background-image: url(../../img/about/about_bg.png.webp);
+}
+
+.about_wrap_area::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #2C2C2C;
+    opacity: .6;
+    content: '';
+    z-index: -1;
+}
+.about_wrap_area .single_service_wrap {
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 60px 63px;
+    transition: 0.5s;
+}
+.about_wrap_area .single_service_wrap:hover {
+    background: #28AE60;
+    border-color: #28AE60;
+}
+.about_wrap_area .single_service_wrap h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+
+.about_wrap_area .single_service_wrap p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #D5D5D5;
+    margin-bottom: 0;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .about_wrap_area .single_service_wrap {
+        padding: 60px 20px;
+    }
+}

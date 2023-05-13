@@ -49,7 +49,7 @@
 .service_hover{
     background: rgba(0, 0, 0, 0.5);
 }
-.service_area .single_service:hover .hover_content{
+.service_area .single_service:hover .service_hover .hover_content{
     transform: translateY(0%);
     opacity: 1;
     visibility: visible;

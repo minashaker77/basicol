@@ -3,6 +3,9 @@ a,button {
     outline: medium none;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 a:focus, a:hover {
     text-decoration: none;
     color: #1F1F1F;
@@ -52,7 +55,11 @@ a:focus, a:hover {
     transition: 0.5s;
     cursor: pointer;
     letter-spacing: 2px;
-    text-decoration: none;
+}
+.boxed-btn3-white:hover {
+    background: #28AE61;
+    color: #fff !important;
+    border: 1px solid transparent;
 }
 .boxed-btn3-white:focus {
     outline: none;
@@ -65,6 +72,9 @@ a:focus, a:hover {
 
 .boxed-btn3-white i {
     margin-right: 2px;
+}
+.boxed-btn3-white a{
+    text-decoration: none;
 }
 
 .boxed-btn3-green-2 {

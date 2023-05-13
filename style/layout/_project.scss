@@ -1,0 +1,21 @@
+.project_area {
+    background: #28AE60;
+    padding: 150px 0;
+}
+.project_area .project_info h3 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 55px;
+}
+.project_area .project_info p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 26px;
+    margin-top: 8px;
+}
+
+.project_area .project_info .boxed-btn3-white:hover {
+    background: #fff;
+    color: #28AE60 !important;
+}
