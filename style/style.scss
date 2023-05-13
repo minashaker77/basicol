@@ -10,23 +10,28 @@
 @import './layout/header';
 @import './layout/navigation';
 @import './layout/sticky_header';
+@import './layout/service';
+@import './layout/about';
+@import './layout/counter';
+@import './layout/gallery';
 
 
-
-// @import '../node_modules/@fortawesome/fontawesome-free/js/all.js';
+//node_modules:
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/variables';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/icons';
-@import '../node_modules/slicknav/dist/jquery.slicknav.min.js';
-@import '../node_modules/slicknav/dist/slicknav.min.css';
+
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import "node_modules/bootstrap/scss/bootstrap";
-@import 'bootstrap';
-
-
+@import '../node_modules/bootstrap/scss/carousel';
+@import '../node_modules/owl.carousel.scss/assets/owl.carousel.scss';
+@import '../node_modules/owl.carousel.scss/assets/owl.theme.default.min.scss';
+@import '../node_modules/owl.carousel.scss/assets/owl.theme.default.scss';
+@import'../node_modules/slicknav/scss/slicknav.scss';
+@import'../node_modules/slicknav/scss/theme.scss';
+@import'../node_modules/slicknav/scss/core.scss';
 
 // pages:
 @import './pages/home';

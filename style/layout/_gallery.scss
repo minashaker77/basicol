@@ -1,0 +1,58 @@
+.gallery_area {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.gallery_area .single-gallery {
+    overflow: hidden;
+    position: relative;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.gallery_area .single-gallery img {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.gallery_area .single-gallery:hover .gallery_hover {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+}
+.gallery_area .single-gallery:hover:hover .hover_inner{
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+}
+.gallery_area .single-gallery .gallery_hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+    background: rgba(40, 174, 96, 0.7);
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.gallery_area .More_Works_btn {
+    margin-top: 40px;
+}
+.gallery_area .single-gallery .gallery_hover .hover_inner {
+    display: table-cell;
+    vertical-align: middle;
+    visibility: hidden;
+}
+.gallery_area .single-gallery .gallery_hover .hover_inner h3 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+}
+.gallery_area .single-gallery .gallery_hover .hover_inner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}

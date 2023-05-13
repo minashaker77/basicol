@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="../js/slider_carousel.js"></script>
+    <script type="text/Javascript" src="./js/script.js"></script>
 </head>
 
-<body>
+<body onload="carousel">
     <div class="header_area">
         <div class="header_top_area">
             <div class="social_media_links">
@@ -113,22 +113,154 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="slider_area">
-        <div class="slide slide1">
-            <div class="slider_text">
-                <h3> Grow Big with <br>
-                    Musicol Business </h3>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio <br>
-                    cumque nihil impedit quo minus.</p>
-                <div class="video_service_btn">
-                    <a href="#" class="boxed-btn3">Our Services</a>
-                    <a href="#" class="boxed-btn3-white"> <i class="fa fa-play"></i>
-                        See How it Work</a>
+        <div id="sticky-header" class="main-header-area sticky">
+            <div class="container">
+                <div class="header_bottom_border">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="index.html">home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">blog</a></li>
+                                                <li><a href="single-blog.html">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="elements.html">elements</a></li>
+                                                <li><a href="Portfolio.html">Portfolio</a></li>
+                                                <li><a href="portfolio_details.html">Portfolio details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="search_button">
+                                    <a href="#">
+                                        <i class="ti-search"></i>
+                                    </a>
+                                </div>
+                                <div class="book_btn d-none d-lg-block">
+                                    <a class="popup-with-form" href="#test-form">Get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none">
+                                <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0"
+                                        class="slicknav_btn slicknav_collapsed" style="outline: none;"><span
+                                            class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span
+                                                class="slicknav_icon-bar"></span><span
+                                                class="slicknav_icon-bar"></span><span
+                                                class="slicknav_icon-bar"></span></span></a>
+                                    <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu"
+                                        style="display: none;">
+                                        <li><a class="active" href="index.html" role="menuitem" tabindex="-1">home</a>
+                                        </li>
+                                        <li><a href="about.html" role="menuitem" tabindex="-1">About</a></li>
+                                        <li><a href="service.html" role="menuitem" tabindex="-1">Services</a></li>
+                                        <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem"
+                                                aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"
+                                                style="outline: none;"><a href="#" tabindex="-1">blog <i
+                                                        class="ti-angle-down"></i></a>
+                                                <span class="slicknav_arrow">+</span></a>
+                                            <ul class="submenu slicknav_hidden" role="menu" aria-hidden="true"
+                                                style="display: none;">
+                                                <li><a href="blog.html" role="menuitem" tabindex="-1">blog</a></li>
+                                                <li><a href="single-blog.html" role="menuitem"
+                                                        tabindex="-1">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem"
+                                                aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row"
+                                                style="outline: none;"><a href="#" tabindex="-1">pages <i
+                                                        class="ti-angle-down"></i></a>
+                                                <span class="slicknav_arrow">+</span></a>
+                                            <ul class="submenu slicknav_hidden" role="menu" aria-hidden="true"
+                                                style="display: none;">
+                                                <li><a href="elements.html" role="menuitem" tabindex="-1">elements</a>
+                                                </li>
+                                                <li><a href="Portfolio.html" role="menuitem" tabindex="-1">Portfolio</a>
+                                                </li>
+                                                <li><a href="portfolio_details.html" role="menuitem"
+                                                        tabindex="-1">Portfolio details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html" role="menuitem" tabindex="-1">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="slide slide2"></div> -->
+    </div>
+    <div class="slider_area">
+        <div class="slider_active owl-carousel owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage" style="transform:refreshOwl(); transition: all 0s ease 0s; width: 7887px;">
+                    <div class="owl-item" style="width: 1126px;">
+                        <div class="single_slider d-flex align-items-center slider_bg_1 overlay2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="slider_text ">
+                                            <h3> Grow Big with <br>
+                                                Musicol Business </h3>
+                                            <p>Nam libero tempore, cum soluta nobis est eligendi optio <br>
+                                                cumque nihil impedit quo minus.</p>
+                                            <div class="video_service_btn">
+                                                <a href="#" class="boxed-btn3">Our Services</a>
+                                                <a href="#" class="boxed-btn3-white"> <i class="fa fa-play"></i>
+                                                    See How it Work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 1126px;">
+                        <div class="single_slider d-flex align-items-center slider_bg_2 overlay2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="slider_text ">
+                                            <h3> Grow Big with <br>
+                                                Musicol Business </h3>
+                                            <p>Nam libero tempore, cum soluta nobis est eligendi optio <br>
+                                                cumque nihil impedit quo minus.</p>
+                                            <div class="video_service_btn">
+                                                <a href="#" class="boxed-btn3">Our Services</a>
+                                                <a href="#" class="boxed-btn3-white"> <i class="fa fa-play"></i>
+                                                    See How it Work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="service_area">
         <div class="container">
@@ -139,17 +271,191 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service service_bg_1">
+                        <div class="service_hover">
+                            <img src="./img/svg-icon/legal-paper.svg" alt="">
+                            <h3>Invoicing</h3>
+                            <div class="hover_content">
+                                <div class="hover_content_inner">
+                                    <h4>Invoicing</h4>
+                                    <p>These cases are perfectly simple and easy to distinguish. In a free hour power.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service service_bg_2">
+                        <div class="service_hover">
+                            <img src="./img/svg-icon/case.svg" alt="">
+                            <h3>Business Growth</h3>
+                            <div class="hover_content">
+                                <div class="hover_content_inner">
+                                    <h4>Business Growth</h4>
+                                    <p>These cases are perfectly simple and easy to distinguish. In a free hour power.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service service_bg_3">
+                        <div class="service_hover">
+                            <img src="./img/svg-icon/survey.svg" alt="">
+                            <h3>Problem Solving</h3>
+                            <div class="hover_content">
+                                <div class="hover_content_inner">
+                                    <h4>Problem Solving</h4>
+                                    <p>These cases are perfectly simple and easy to distinguish. In a free hour power.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="about_area"></div>
+    <div class="about_area">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="about_image">
+                        <img src="./img/about/about.png.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="about_info">
+                        <h3>The Largest Business Expert</h3>
+                        <p>These cases are perfectly simple and easy to distinguish. In a free hour, <br> when our power
+                            of choice is untrammelled and when nothing prevents <br> our being able to do what we like
+                            best.</p>
+                        <ul>
+                            <li> Apartments frequently or motionless. </li>
+                            <li> Duis aute irure dolor in reprehenderit in voluptate. </li>
+                            <li> Voluptatem quia voluptas sit aspernatur.</li>
+                        </ul>
+                        <div class="about_btn">
+                            <a class="boxed-btn3" href="#">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="counter_area">
-        <div class="container"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3> <span class="counter">520</span> <span>+</span> </h3>
+                        <span>Total Projects</span>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3> <span class="counter">244</span> </h3>
+                        <span>On Going Projects</span>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3> <span class="counter">95</span> <span>%</span> </h3>
+                        <span>Job Success</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="gallery_area">
         <div class="container">
-            <div class="row"></div>
-            <div class="row grid"></div>
-            <div class="row"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-50">
+                        <h3>Our Recent Works</h3>
+                        <p>These cases are perfectly simple and easy to distinguish. In a free <br> hour, when our power
+                            of choice is untrammelled.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-grid" style="position: relative; height: 1324.05px;">
+                <div class="col-xl-4 col-lg-6 d-grid col-md-6" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="single-gallery mb-20">
+                        <div class="portfolio-img">
+                            <img src="./img/gallery/1.png.webp" alt="">
+                        </div>
+                        <div class="gallery_hover">
+                            <a href="portfolio_details.html" class="hover_inner">
+                                <h3>Product Branding</h3>
+                                <span>Branding</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 d-grid col-md-6"style="position: absolute; left: 50.0001%; top: 0px;">
+                    <div class="single-gallery mb-20">
+                        <div class="portfolio-img">
+                            <img src="./img/gallery/2.png.webp" alt="">
+                        </div>
+                        <div class="gallery_hover">
+                            <a href="portfolio_details.html" class="hover_inner">
+                                <h3>Product Branding</h3>
+                                <span>Branding</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 d-grid col-md-6"style="position: absolute; left: 0%; top: 529px;">
+                    <div class="single-gallery mb-20">
+                        <div class="portfolio-img">
+                            <img src="./img/gallery/3.png.webp" alt="">
+                        </div>
+                        <div class="gallery_hover">
+                            <a href="portfolio_details.html" class="hover_inner">
+                                <h3>Product Branding</h3>
+                                <span>Branding</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 d-grid col-md-6"style="position: absolute; left: 50.0001%; top: 529px;">
+                    <div class="single-gallery mb-20">
+                        <div class="portfolio-img">
+                            <img src="./img/gallery/4.png.webp" alt="">
+                        </div>
+                        <div class="gallery_hover">
+                            <a href="portfolio_details.html" class="hover_inner">
+                                <h3>Product Branding</h3>
+                                <span>Branding</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 d-grid col-md-6"style="position: absolute; left: 50.0001%; top: 794px;">
+                    <div class="single-gallery mb-20">
+                        <div class="portfolio-img">
+                            <img src="./img/gallery/5.png.webp" alt="">
+                        </div>
+                        <div class="gallery_hover">
+                            <a href="portfolio_details.html" class="hover_inner">
+                                <h3>Product Branding</h3>
+                                <span>Branding</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="More_Works_btn text-center">
+                        <a class="boxed-btn3-green-2" href="#">More Works</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="about_wrap_area">
@@ -183,6 +489,6 @@
             </div>
         </div>
     </div>
-</body>
+    </div>
 
-</meta>
+    </div>

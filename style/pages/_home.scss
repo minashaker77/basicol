@@ -1,36 +1,41 @@
 @import '../sass-utils/mixins';
 
+.slider_area .slider_active {
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
-.slider_area {
+.slider_area .single_slider {
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slider_bg_1 {
+    background-image: url(../../img/banner.png.webp);
+}
+.slider_bg_2 {
+    background-image: url(../../img/banner2.png.webp);
+}
+
+.overlay2 {
     position: relative;
+    z-index: 0;
+}
+
+.overlay2::before {
+    position: absolute;
+    content: "";
+    background-color: #2C2C2C;
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 50%);
-    z-index: 1;
-    animation: slide 2s linear;
-}
-
-.slider_area .slide {
-    width: 100%;
-    height: calc(100vh - 20%);
-    float: left;
-    overflow: hidden;
-}
-
-.slider_area .slide.slide1 {
-    animation-delay: 0;
-    background: url(../../img/banner.png.webp) no-repeat;
-    background-size: cover;
-    background-position: left;
-
-}
-
-.slider_area .slide.slide2 {
-    animation-delay: 2s;
-    background: url(../../img/banner2.png.webp);
-    background-size: cover;
-    background-position: right;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
 }
 
 .slider_area .slide .slider_text {
@@ -38,8 +43,7 @@
     align-items: center;
 }
 
-body .slider_area .slide .slider_text h3 {
-    letter-spacing: 3px;
+.slider_area .single_slider .slider_text h3 {
     color: #FFF;
     font-family: "Poppins", sans-serif;
     font-size: 50px;
@@ -49,30 +53,25 @@ body .slider_area .slide .slider_text h3 {
     line-height: 62px;
 }
 
-body .slider_area .slide .slider_text p {
+.slider_area .single_slider .slider_text p {
     font-size: 20px;
     font-weight: 400;
     color: #D5D5D5;
     margin-bottom: 24px;
     margin-top: 10px;
 }
-body .slider_area .slide .slider_text .video_service_btn > a{
-    margin-right: 15px;
+
+.boxed-btn3-white i {
+    margin-right: 2px;
 }
 
-.service_area {
-    padding-top: 150px;
-    padding-bottom: 120px;
-}
-.section_title h3 {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 55px;
-    color: #2C2C2C;
-    position: relative;
-    z-index: 0;
-    padding-bottom: 15px;
-}
-.mb-50 {
-    margin-bottom: 50px;
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .slider_area .single_slider .slider_text h3 {
+        font-size: 35px;
+        letter-spacing: 3px;
+    }
+
+    .slider_area .single_slider .slider_text p {
+        font-size: 16px;
+    }
 }
