@@ -5,9 +5,9 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "bootstrap": "^5.2.3",
-    "sass": "^1.49.9",
+    "sass": "^1.62.1",
     "sass-loader": "^12.6.0",
     "slicknav": "^1.0.8",
-    "webpack": "^5.69.1"
+    "webpack": "^5.82.1"
   }
 }
