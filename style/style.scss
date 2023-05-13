@@ -21,5 +21,12 @@
 @import '../node_modules/@fortawesome/fontawesome-free/scss/icons';
 @import '../node_modules/slicknav/dist/jquery.slicknav.min.js';
 @import '../node_modules/slicknav/dist/slicknav.min.css';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "node_modules/bootstrap/scss/bootstrap";
+@import 'bootstrap';
+
+
+
 // pages:
 @import './pages/home';
