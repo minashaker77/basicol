@@ -17,6 +17,7 @@
 @import './layout/about_wrap';
 @import './layout/financial_solution';
 @import './layout/project';
+@import './layout/footer';
 
 
 //node_modules:
@@ -35,6 +36,9 @@
 @import'../node_modules/slicknav/scss/slicknav.scss';
 @import'../node_modules/slicknav/scss/theme.scss';
 @import'../node_modules/slicknav/scss/core.scss';
+@import '../node_modules/themify-icons-sass/themify-icons/themify-icons';
+@import '../node_modules/themify-icons-sass/themify-icons/icons';
+
 
 // pages:
 @import './pages/home';
